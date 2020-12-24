@@ -51,5 +51,4 @@ app.models.User.afterRemote('create', (ctx, user, next) => {
     }
     next();
   });
-
 });
