@@ -25,7 +25,7 @@
       "model": "CustomAccessToken",
       "foreignKey": "userId"
     },
-    "Post":{
+    "Post": {
       "type": "hasMany",
       "model": "Post",
       "foreignKey": ""
