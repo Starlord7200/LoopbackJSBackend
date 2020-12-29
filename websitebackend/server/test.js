@@ -27,6 +27,7 @@ var filter = {
     }
 }
 
-models.Profile.findById("5fea0e5e2304021294c7389c", filter, (err, found) => {
+models.Profile.findById("5fea0d4426f6af09a49f26df", {include: 'Posts'}, (err, found) => {
     console.log("Found?", err, found);
+    found.Posts.destroyAll({date: {lte: new Date('2019-02-04')}});
 })
